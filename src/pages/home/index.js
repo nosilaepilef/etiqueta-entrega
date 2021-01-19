@@ -19,9 +19,9 @@ function Home() {
       <nav className="container--menu">
         <div className="menu--pai">
           <div className="logo--pai">
-            <a href="https://www.lojasgrafitte.com.br/">
+            <Link to="/">
               <img src={Logo} alt={Logo} />
-            </a>
+            </Link>
           </div>
           <div className="pesquisa--id">
             <form onSubmit={e=> handlerSubmit(e)}>

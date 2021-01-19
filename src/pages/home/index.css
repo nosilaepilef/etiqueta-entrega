@@ -16,12 +16,16 @@
 
 .container--menu .menu--pai .logo--pai{
   height: 100%;
-  padding: 1rem;
+  padding: .5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
 }
 
 .container--menu .menu--pai .logo--pai img{
   width: 163px;
+  padding: .5rem;
 }
 
 .container--menu .menu--pai .pesquisa--id form{
