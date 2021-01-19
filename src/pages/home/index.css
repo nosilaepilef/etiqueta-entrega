@@ -99,10 +99,11 @@ section .btn button{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: filter 300ms;
 }
 
 section .btn button:hover{
-  opacity: 90%;
+  filter: brightness(105%);
 }
 
 section .whats button{
