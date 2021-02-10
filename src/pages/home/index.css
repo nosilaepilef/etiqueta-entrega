@@ -8,24 +8,20 @@
 
 .container--menu .menu--pai{
   width: 90%;
-  height: 100%;  
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .container--menu .menu--pai .logo--pai{
-  height: 100%;
-  padding: .5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .container--menu .menu--pai .logo--pai img{
-  width: 163px;
-  padding: .5rem;
+  height: 10vh;
+  padding: .5rem 0;
 }
 
 .container--menu .menu--pai .pesquisa--id form{
@@ -35,7 +31,6 @@
 .container--menu .menu--pai .pesquisa--id input{
   background-color: #E7E7E7;
   width: 300px;
-  height: 40px;
   border-radius: 50px;
   border: none;
   padding-left: 1.0rem;
@@ -51,10 +46,12 @@
 .container--menu .menu--pai .pesquisa--id button{
   background-color: #E7E7E7;
   width: 60px;
-  height: 40px;
   border-radius: 50px;
   border: none;
   outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 12px;
   font-size: 30px;
   padding: .3rem;
@@ -175,4 +172,28 @@ section .tipo--entrega, .dados--etiqueta{
   display: flex;
   align-items: center;
   margin-right: 1.2rem;
+}
+
+.container--bemvindo{
+  height: 90vh;
+  display: flex;  
+  align-items: center;
+  flex-direction: column;
+}
+
+.container--bemvindo .bemvindo{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+.bemvindo p{
+  margin: 1rem;
+
+}
+@media screen and (max-width: 700px) {
+  /*estilos*/
 }
