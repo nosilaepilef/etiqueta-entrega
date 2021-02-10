@@ -222,7 +222,7 @@ function Etiqueta({ match }) {
                 ? (
                 <div className="dados--de">
                   <p className="cto">
-                    Complemento:
+                    Complemento: {" "}
                     <strong>
                       {etiqueta.entrega.complemento ? etiqueta.entrega.complemento : <BarLoader color={"#d3d3d3"} loading={true} size={10} />}
                     </strong>
