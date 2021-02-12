@@ -71,6 +71,9 @@ function Etiqueta({ match }) {
                         : etiqueta.pedido.enviado ===
                           "Jadlog Package - Transportadora "
                         ? "Transportadora - Jadlog Package"
+                        : etiqueta.pedido.enviado ===
+                          "Jadlog Expresso - Transportadora"
+                        ? "Transportadora - Jadlog Expresso"
                         : null
                       : <BarLoader color={"#d3d3d3"} loading={true} size={10} />
                     }

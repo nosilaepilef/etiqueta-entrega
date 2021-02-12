@@ -159,6 +159,9 @@ function Home() {
                           : dados.pedido.enviado ===
                             "Jadlog Package - Transportadora "
                           ? "Transportadora - Jadlog Package"
+                          : dados.pedido.enviado === 
+                            "Jadlog Expresso - Transportadora"
+                          ? "Transportadora - Jadlog Expresso"
                           : null
                         : "Sem Registro!"}
                     </p>
