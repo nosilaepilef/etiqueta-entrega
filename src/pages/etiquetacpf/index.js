@@ -58,23 +58,7 @@ function Etiqueta({ match }) {
                 <p>
                   <strong>
                     {etiqueta.pedido
-                      ? etiqueta.pedido.enviado === "ELG"
-                        ? "Entrega - Lojas Grafitte - ELG"
-                        : etiqueta.pedido.enviado === "RLGV"
-                        ? "Retirar - Loja Várzea Grande - RLGV"
-                        : etiqueta.pedido.enviado === "RLGC"
-                        ? "Retirar - Loja Cuiabá Coxipó - RLGC"
-                        : etiqueta.pedido.enviado === "Correios SEDEX"
-                        ? "Transportadora Correios - SEDEX"
-                        : etiqueta.pedido.enviado === "Correios PAC"
-                        ? "Transportadora Correios - PAC"
-                        : etiqueta.pedido.enviado ===
-                          "Jadlog Package - Transportadora "
-                        ? "Transportadora - Jadlog Package"
-                        : etiqueta.pedido.enviado ===
-                          "Jadlog Expresso - Transportadora"
-                        ? "Transportadora - Jadlog Expresso"
-                        : null
+                      ? etiqueta.pedido.enviado
                       : <BarLoader color={"#d3d3d3"} loading={true} size={10} />
                     }
                   </strong>

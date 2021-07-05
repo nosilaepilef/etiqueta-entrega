@@ -146,23 +146,7 @@ function Home() {
                     <span>Enviar pedido via:</span>
                     <p>
                       {dados.pedido
-                        ? dados.pedido.enviado === "ELG"
-                          ? "Entrega - Lojas Grafitte - ELG"
-                          : dados.pedido.enviado === "RLGV"
-                          ? "Retirar - Loja Várzea Grande - RLGV"
-                          : dados.pedido.enviado === "RLGC"
-                          ? "Retirar - Loja Cuiabá Coxipó - RLGC"
-                          : dados.pedido.enviado === "Correios SEDEX"
-                          ? "Transportadora Correios - SEDEX"
-                          : dados.pedido.enviado === "Correios PAC"
-                          ? "Transportadora Correios - PAC"
-                          : dados.pedido.enviado ===
-                            "Jadlog Package - Transportadora "
-                          ? "Transportadora - Jadlog Package"
-                          : dados.pedido.enviado === 
-                            "Jadlog Expresso - Transportadora"
-                          ? "Transportadora - Jadlog Expresso"
-                          : null
+                        ? dados.pedido.enviado
                         : "Sem Registro!"}
                     </p>
                   </div>

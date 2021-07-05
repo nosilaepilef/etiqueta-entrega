@@ -1,18 +1,22 @@
-import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import React from "react";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-import Home from './pages/home';
-import Etiqueta from './pages/etiqueta';
+import Home from "./pages/home";
+import EtiquetaCpf from "./pages/etiquetacpf";
+import EtiquetaCnpj from "./pages/etiquetacnpj";
+import { CompareProvider } from "./context/ComparaContext";
 
 function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path='/' exact component={Home}/>
-        <Route path='/etiqueta/:pedido' component={Etiqueta}/>
+        <CompareProvider>
+          <Route path="/" exact component={Home} />
+          <Route path="/etiqueta/:pedido" component={EtiquetaCpf} />
+        </CompareProvider>
       </Switch>
     </BrowserRouter>
-  )
+  );
 }
 
 export default Router;
