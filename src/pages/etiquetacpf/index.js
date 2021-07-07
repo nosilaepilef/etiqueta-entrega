@@ -242,11 +242,11 @@ function Etiqueta({ match }) {
                       value={`https://www.google.com/maps/search/${etiqueta.entrega.endereco.replace(/[- ]/g, "+")},${etiqueta.entrega.numero},${etiqueta.entrega.cidade.replace(/[ ]/g, "+")},${etiqueta.entrega.estado}`}
                       size={100}
                       bgColor={"#ffffff"}
-                      fgColor={"#1877F2"}
+                      fgColor={"#EE3865"}
                       level={"L"}
                       includeMargin={false}
                       renderAs={"svg"}
-                    /> : <BounceLoader color={"#409fff"} loading={true} size={60} />
+                    /> : <BounceLoader color={"#EE3865"} loading={true} size={60} />
                     
                     }
                   </span>                 
